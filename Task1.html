@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning Web Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0033cc;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #666;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .link {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #0033cc;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #ff6600;
+            color: #0033cc;
+        }
+
+        /* Button Animation */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background: #0033cc;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background: #ff6600;
+        }
+
+        /* Animations */
+        h1, h2 {
+            animation: fadeInDown 1s ease-in-out;
+            color: blue;
+        }
+
+        .content {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        img {
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LEARNING WEB DESIGN</h1>
+        <h2>3rd Edition</h2>
+        <div class="intro">
+            <p>A Beginner's Guide to HTML, Style Sheets, and Web Graphics</p>
+        </div>
+        <div class="content">
+            <p>This thoroughly revised edition teaches you how to build websites according to modern design practices and professional standards. Learning Web Design explains:</p>
+            <ul>
+                <li>How to create a simple (X)HTML page, how to add links and images</li>
+                <li>Everything you need to know about web standards — (X)HTML, DTDs, and more</li>
+                <li>Cascading Style Sheets — formatting text, colors and backgrounds, using the box model, page layout, and more</li>
+                <li>All about web graphics, and how to make them lean and mean through optimization</li>
+                <li>The site development process, from start to finish</li>
+                <li>Getting your pages on the web — hosting, domain names, and FTP</li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/300x400" alt="Learning Web Design Book Cover">
+        </div>
+        <div class="link">
+            <p>Read the complete <a href="#">Table of Contents</a> and buy it at <a href="#">O'Reilly</a></p>
+            <a class="button" href="#">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>
